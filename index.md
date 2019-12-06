@@ -39,12 +39,9 @@
 </head>
 <body>
 <br><br>
-<h1 align=center> Country Wise Death Rate Change Over The Years</h1><br>
-<h3 align=center>(Data filtered out for a category of people who are older than 70 years) </h3><br>
-<h4 >&emsp; &emsp; &emsp; In earlier visualizations, we saw that the death rate is highest in the category of people where age is greater than 70 years.<br>
-    &emsp; &emsp; &emsp; This information leads us to see more detailed visualization, where we have two filters:<br><br>
-    &emsp; &emsp; &emsp; &emsp;  1. People having age > 70 years<br>
-    &emsp; &emsp; &emsp; &emsp; 2. Country selected from a dropdown<br></h4>
+<h3 align=center> Country Wise Death Rate Change Over The Years</h1><br>
+<h4 align=center>(Data filtered out for a category of people who are older than 70 years) </h3><br>
+    <center>Select Country:</center>
 </body>
 <div id="drop" align=center></div>
 <script src="https://d3js.org/d3.v3.min.js"></script>
