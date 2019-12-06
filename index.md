@@ -39,9 +39,7 @@
 </head>
 <body>
 <br><br>
-<h3 align=center> Country Wise Death Rate Change Over The Years</h3><br>
-<h4 align=center>(Data filtered out for a category of people who are older than 70 years) </h4><br>
-  
+
 </body>
 <div id="drop" align=center></div>
 <script src="https://d3js.org/d3.v3.min.js"></script>
