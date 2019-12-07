@@ -100,7 +100,7 @@
             .append("rect")
 
             .attr("class","rectangle")
-            .attr("width", (width22/data.length)-21)
+            .attr("width", (width22/data.length)-19)
             .attr("height", function(d){
                 return height22 - y(+d[selection]);
             })
@@ -118,7 +118,7 @@
             })
         svg.append("text")
             .text("No of deaths")
-            .attr("transform", "rotate(90)")
+            .attr("transform", "rotate(-90)")
             .attr("transform",'translate(-160,140)')
 
         svg.append("text")
