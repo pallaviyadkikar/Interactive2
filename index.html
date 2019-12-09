@@ -6,7 +6,7 @@
             font-family:"avenir next", Arial, sans-serif;
             font-size: 20px;
             color: #696969;
-            background-color: #f0f5f5;
+            background-color: white;
         }
 
         text {
@@ -45,7 +45,7 @@
 <div id="drop" align=center></div>
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script>
-    var margin22 = {top: 100, right: 180, bottom: 80, left: 70},
+    var margin22 = {top: 30, right: 300, bottom: 80, left: 65},
         width22 = 960 - margin22.left - margin22.right+800,
         height22 = 500 - margin22.top - margin22.bottom;
 
@@ -119,13 +119,13 @@
             })
         svg.append("text")
             .text("No of deaths")
-           .attr("dx", "-10em")
+            .attr("dx", "-10em")
             .attr("dy", "-2.5em")
             .attr("transform", "rotate(-90)" );
 
         svg.append("text")
             .text("Year")
-            .attr("transform",'translate(640,370)')
+            .attr("transform",'translate(640,450)')
         var selector = d3.select("#drop")
             .append("select")
             .attr("id","dropdown")
@@ -137,7 +137,7 @@
                     return +d[selection.value];})]);
 
                 yAxis.scale(y);
-               // yAxis.title("Number of deaths")
+                // yAxis.title("Number of deaths")
 
                 d3.selectAll(".rectangle")
                     .transition()
@@ -161,8 +161,8 @@
                     .transition()
                     .call(yAxis);
 
-                });
-            selector.selectAll("option")
+            });
+        selector.selectAll("option")
             .data(elements)
             .enter().append("option")
             .attr("value", function(d){
